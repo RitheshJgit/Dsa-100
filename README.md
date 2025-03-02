@@ -7,7 +7,7 @@
 **Progress:** 0/7 ✅⬜⬜⬜⬜⬜⬜
 
 ## Step 3: Solve Problems on Arrays [Easy -> Medium -> Hard]
-**Progress:** 0/40 ✅⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+**Progress:** 0/40 ✅⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
 
 ## Step 4: Binary Search [1D, 2D Arrays, Search Space]
 **Progress:** 0/32 ✅⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
