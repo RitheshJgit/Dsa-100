@@ -2,7 +2,7 @@ package STEP1.Patterns;
 
 public class AllPatterns {
     public static void main(String[] args) {
-        inversePyramid();
+        diamond();
     }
 
     public static void triangle() {
@@ -130,6 +130,42 @@ public class AllPatterns {
                 System.out.print("*");
             }
 
+            System.out.println();
+        }
+
+    }
+
+    public static void diamond(){
+        /*
+
+        *
+       ***
+      *****
+     *******
+      *****
+       ***
+        *
+
+         */
+        int n = 4;
+        for (int i = 0; i < 2 * n -1 ; i++) {
+            int space;
+            int star;
+            if (i < n) {
+                 space = n-i-1;
+                 star = 2 * i +1;
+            }
+
+            else{
+                space = i - n + 1;
+                star = (2 * n - 1) - (2 * space);
+            }
+            for (int j = 0; j < space; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < star; j++) {
+                System.out.print("*");
+            }
             System.out.println();
         }
 
