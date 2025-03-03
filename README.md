@@ -1,7 +1,7 @@
 # DSA Progress Tracker
 
 ## Step 1: Learn the Basics
-**Progress:** 0/31 ✅⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+**Progress:** 0/31 ✅✅⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
 
 ## Step 2: Learn Important Sorting Techniques
 **Progress:** 0/7 ✅⬜⬜⬜⬜⬜⬜
