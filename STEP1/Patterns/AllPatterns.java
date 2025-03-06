@@ -2,7 +2,7 @@ package STEP1.Patterns;
 
 public class AllPatterns {
     public static void main(String[] args) {
-        alphabetTriangle();
+        squareVoid();
     }
 
     public static void triangle() {
@@ -14,7 +14,7 @@ public class AllPatterns {
         ****
 
         1
-        12
+        12u
         123
         1234
 
@@ -68,7 +68,7 @@ public class AllPatterns {
         /*
         ` *
          **
-        *+*
+        +
        ****
 
          */
@@ -263,6 +263,16 @@ public class AllPatterns {
     }
 
     public static void sortedTriangle() {
+
+        /*
+
+        1
+        2 3
+        4 5 6
+        7 8 9 10
+        11 12 13 14 15
+
+         */
         int count = 1;
         int n = 6;
 
@@ -276,6 +286,16 @@ public class AllPatterns {
     }
 
     public static void alphabetTriangle() {
+
+        /*
+
+        A
+        A B
+        A B C
+        A B C D
+        A B C D E
+
+         */
         int n = 5;
         // Method - 1
 
@@ -299,4 +319,182 @@ public class AllPatterns {
             System.out.println();
         }
     }
+
+    public static void InverseAlphabetTriangle() {
+        int n = 5;
+        for (int i = 0; i <= n; i++) {
+            for (char ch = 'A'; ch <= 'A' + (n - i - 1); ch++) {
+                System.out.print(ch);
+            }
+            System.out.println();
+        }
+    }
+
+    public static void identicalTriangle() {
+
+        /*
+
+        ABCDE
+        ABCD
+        ABC
+        AB
+        A
+
+         */
+        int n = 5;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
+                char ch = (char) ('A' + i);
+                System.out.print(ch);
+            }
+            System.out.println();
+        }
+    }
+
+    public static void alphabetPyramid() {
+
+        int n = 4;
+
+        for (int i = 0; i < n; i++) {
+            // Print leading spaces
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
+            }
+
+            // Print increasing letters
+            for (char ch = 'A'; ch <= 'A' + i; ch++) {
+                System.out.print(ch);
+            }
+
+            // Print decreasing letters
+            for (char ch = (char) ('A' + i - 1); ch >= 'A'; ch--) {
+                System.out.print(ch);
+            }
+
+            // Move to the next line
+            System.out.println();
+        }
+    }
+
+    public static void topBottomAlphabet() {
+
+        /*
+
+        E
+        DE
+        CDE
+        BCDE
+        ABCDE
+
+         */
+        int n = 5;
+
+        for (int i = 0; i < n; i++) {
+            for (char ch = (char) ('E' - i); ch <= 'E'; ch++) {
+                System.out.print(ch);
+            }
+            System.out.println();
+        }
+    }
+
+
+    public static void SymmetricVoid() {
+        int n = 4;
+
+        /*
+
+         ********
+         ***  ***
+         **    **
+         *      *
+         *      *
+         **    **
+         ***  ***
+         ********
+
+         */
+
+        for (int i = 0; i < 2 * n; i++) {
+            int star;
+            int space;
+            if (i < n) {
+                star = n - i;
+                space = 2 * i;
+            } else {
+                star = i - n + 1;
+                space = 2 * n - (2 * star);
+            }
+            for (int j = 0; j < star; j++) {
+                System.out.print("*");
+            }
+
+            for (int j = 0; j < space; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = 0; j < star; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+    }
+
+    public static void symmetricVoid2() {
+        int n = 4;
+        /*
+
+         *             *
+         * *         * *
+         * * *     * * *
+         * * * * * * * *
+         * * *     * * *
+         * *         * *
+         *             *
+
+         */
+        for (int i = 0; i < 2 * n - 1; i++) {
+            int star;
+            int space;
+
+            if (i < n) {
+                star = i + 1;
+                space = (2 * n) - 2 * star;
+            } else {
+                space = 2 * (i - n + 1);
+                star = (2 * n - space) / 2;
+            }
+
+            for (int j = 0; j < star; j++) {
+                System.out.print("* ");
+            }
+
+            for (int j = 0; j < space; j++) {
+                System.out.print("  ");
+            }
+
+            for (int j = 0; j < star; j++) {
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
+    }
+
+    public static void squareVoid() {
+        int n = 10;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if(i ==0 || j == 0 || i == n-1 || j== n-1){
+                    System.out.print(j);
+                }
+                else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
 }
