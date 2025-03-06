@@ -5,7 +5,7 @@ public class AllPatterns {
         squareVoid();
     }
 
-    public static void triangle() {
+    public static void Triangle() {
         /*
 
         *
@@ -14,7 +14,7 @@ public class AllPatterns {
         ****
 
         1
-        12u
+        12
         123
         1234
 
@@ -28,7 +28,7 @@ public class AllPatterns {
         }
     }
 
-    public static void numberTriangle() {
+    public static void NumberTriangle() {
         /*
 
         1
@@ -46,7 +46,7 @@ public class AllPatterns {
         }
     }
 
-    public static void inverseTriangle() {
+    public static void InverseTriangle() {
         /*
 
          ****
@@ -64,9 +64,9 @@ public class AllPatterns {
         }
     }
 
-    public static void InverseTriangle() {
+    public static void InverseTriangle2() {
         /*
-        ` *
+         *
          **
         +
        ****
@@ -87,7 +87,7 @@ public class AllPatterns {
     }
 
 
-    public static void pyramid() {
+    public static void Pyramid() {
         /*
 
          *
@@ -111,7 +111,7 @@ public class AllPatterns {
 
     }
 
-    public static void inversePyramid() {
+    public static void InversePyramid() {
         /*
 
          *******
@@ -135,7 +135,7 @@ public class AllPatterns {
 
     }
 
-    public static void diamond() {
+    public static void Diamond() {
         /*
 
          *
@@ -170,7 +170,7 @@ public class AllPatterns {
 
     }
 
-    public static void halfPyramid() {
+    public static void HalfPyramid() {
 
         /*
 
@@ -199,7 +199,7 @@ public class AllPatterns {
         }
     }
 
-    public static void onesAndZeros() {
+    public static void OnesAndZeros() {
 
         /*
 
@@ -233,7 +233,7 @@ public class AllPatterns {
         }
     }
 
-    public static void doubleTriangle() {
+    public static void DoubleTriangle() {
         /*
 
             1             1
@@ -482,15 +482,15 @@ public class AllPatterns {
     }
 
     public static void squareVoid() {
-        int n = 10;
+        int n = 6;
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if(i ==0 || j == 0 || i == n-1 || j== n-1){
-                    System.out.print(j);
+                    System.out.print("* ");
                 }
                 else {
-                    System.out.print(" ");
+                    System.out.print("  ");
                 }
             }
             System.out.println();
