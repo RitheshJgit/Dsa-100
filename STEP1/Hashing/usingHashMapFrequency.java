@@ -14,7 +14,6 @@ public class usingHashMapFrequency {
 
         for (int i = 0; i <given_arr.length-1; i++) {
             if(map.containsKey(given_arr[i])){
-
             }
         }
     }
