@@ -2,9 +2,38 @@ package STEP3.Easy;
 
 public class LongestSubarray {
     public static void main(String[] args) {
-        int[] arr = {2,3,5};
-        int k = 8;
-        System.out.println(LongestSubArray(arr, k));
+        int[] arr = {1, 1, 1, 1, 1};
+        int k = 5;
+        System.out.println(LongestSubArray_Optimized(arr, k));
+    }
+
+    // using sliding window problem
+    public static int LongestSubArray_Optimized(int[] nums, int k) {
+        // assign left, right and sum
+        int left = 0, right = 0, max = 0;
+        int sum = 0;
+        int n = nums.length;
+
+        while (right < n) {
+            // sum the elementsExpand the window
+            sum += nums[right];
+
+            // sum exceeds k
+            while (sum > k && left < n) {
+                sum -= nums[left];
+                left++;
+            }
+
+            // if you found the sum == k update the length
+            if (sum == k) {
+                max = Math.max(max, right - left + 1);
+            }
+
+            // move to right
+            right++;
+        }
+
+        return max;
     }
 
     public static int findLongestSubArray(int[] nums, int k) {
@@ -18,14 +47,14 @@ public class LongestSubarray {
             }
 
             // check if the sub array elements contain k sum return
-            if(sum == k){
-                return  nums.length - i;
+            if (sum == k) {
+                return nums.length - i;
             }
         }
 
         // if then it contain one element only if should for it
         for (int i = 0; i < nums.length; i++) {
-            if(nums[i] == k){
+            if (nums[i] == k) {
                 return 1;
             }
         }
